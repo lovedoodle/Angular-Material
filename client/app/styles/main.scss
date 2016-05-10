@@ -16,10 +16,14 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   // padding-right: 5px;
   padding: 3px;
   position: relative;
-  .glyphicon-info-sign {
+  .touchOnly {
     position: absolute;
-    right: 20px;
-    bottom: 20px;
+    right: 30px;
+    bottom: 30px;
+    // span {
+    //   background-color: #d9d9d9;
+    //   opacity: 0.4;
+    // }
   }
   .intro{
     position: absolute;
