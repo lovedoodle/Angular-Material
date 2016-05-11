@@ -66,15 +66,15 @@ if (app.get('env') === 'development') {
     // This covers serving up the index page
     app.use(express.static(path.join(__dirname, '../client/.tmp')));
     app.use(express.static(path.join(__dirname, '../client/app')));
-
+    app.listen(process.env.PORT || 5000);
     // Error Handling
-    app.use(function(err, req, res, next) {
-        res.status(err.status || 500);
-        res.render('error', {
-            message: err.message,
-            error: err
-        });
-    });
+    // app.use(function(err, req, res, next) {
+    //     res.status(err.status || 500);
+    //     res.render('error', {
+    //         message: err.message,
+    //         error: err
+    //     });
+    // });
 }
 
 /**
