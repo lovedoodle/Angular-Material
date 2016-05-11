@@ -1,11 +1,15 @@
+$fa-font-path: "../bower_components/font-awesome/fonts";
+@import "font-awesome/scss/font-awesome.scss";
+
+
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
 .mainWrap {
-  width: 98%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   box-sizing: border-box;
 }
 //header style
@@ -24,6 +28,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 //main content where projects div style is
 .projectsWrap {
+  width: 98%;
+  margin: 10px auto 40px auto;;
 
 }
 .projectsDiv {
@@ -59,7 +65,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   }
 
   .glyphicon {
-    font-size: 200%;
+    font-size: 300%;
   }
 }
 
@@ -93,5 +99,35 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
       opacity: 0.9;
       font-weight: bold;
     }
+  }
+
+  .contact i:hover {
+    background-color: #ff3300;
+  }
+}
+
+//footer style
+.footer {
+  width: 100%;
+  margin: 5px auto;
+  background: -webkit-radial-gradient(#ffffff,#bfbfbf); /* For Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(#ffffff,#bfbfbf); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(#ffffff,#bfbfbf); /* For Fx 3.6 to 15 */
+  background: linear-gradient(#ffffff,#bfbfbf); /* Standard syntax (must be last) */
+  height: 500px;
+  .contact {
+    width: 70%;
+    margin: auto;
+    a {
+      text-decoration: none;
+
+    }
+  }
+
+  .fa {
+    font-size: 90px;
+    font-weight: bold;
+    color: white;
+    padding: 30px;
   }
 }
