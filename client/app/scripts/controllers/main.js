@@ -21,15 +21,4 @@ angular.module('clientApp')
     $scope.is_touch_device = is_touch_device();
     console.log($scope.is_touch_device);
 
-  //   if (!is_touch_device()) {
-  //    var touchOnlyElements=document.getElementByClassName('touchOnly');
-  //    for(i=0; i<touchOnlyElements.length; i++) {
-  //      var touchOnlyElement = touchOnlyElements(i);
-  //      console.log(touchOnlyElement);
-  //      touchOnlyElement.style.display='none';
-  //    }
-   //
-  //   //  .style.display='none';
-  //  };
-
   });

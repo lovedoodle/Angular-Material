@@ -22,16 +22,20 @@
   <p>Spectacular Test Runner for JavaScript.</p>
 </div> -->
 <div class="mainWrap" ng-class="{nonTouchDevice: !is_touch_device}">
-  <div class="" layout="column" layout-wrap>
-    <div class="header headline">
-      <h3>Hello & Welcome</h1>
+  <div class="header" layout="column" layout-wrap>
+    <div class="headline">
+      <h1>Hello & Welcome</h1>
     </div>
-    <div class="header content" >
+    <div class="content" >
       <p>
-        My Name Jing Wait. I am an aspiring full stack web developer. As a person who love living in browers' world, how rewarding a career in the behind techlodgies can be!
+        My Name Jing Wait. I am an aspiring full stack web developer. As a person who loves living in browers' world, how rewarding a career behind the web techlodgies can be!
       </p>
       <p>
-        Below are some of pets projects I have been working on.
+        I am passionate about great design and writing javascripts code. Please take a look at my <a href="https://drive.google.com/file/d/0B6k_CGkGW3O1eGpKMmhvRkhWOFE/view?usp=sharing">Resume</a> and <a href="https://github.com/lovedoodle">Github repos</a>.
+      </p>
+
+      <p>
+        Below are some of pets projects I have done with Angular, Node, RESTful API.
       </p>
 
     </div>
@@ -46,11 +50,11 @@
         <div ng-class="{intro: !is_touch_device, introTouchDeviceHide: is_touch_device, introTouchDeviceShow: is_touch_device && introShow1}">
           <h2>Twitter Search API</h2>
           <p>
-            Angular map built with twitter api and d3
+            Features include showing tweets on Google map and D3 bubble chart of trending tweets and topics.
           </p>
         </div>
       </a>
-      <div ng-show="is_touch_device" class="touchOnly" >
+      <div ng-show="is_touch_device" class="touchOnlyIcons" >
         <span class="glyphicon glyphicon-link" ng-show="toolBar1"></span>
         <span class="glyphicon glyphicon-remove" ng-show="toolBar1" ng-click="toolBar1 = false; infoSign1 = false; introShow1 = false"></span>
         <span class="glyphicon glyphicon-info-sign" ng-hide="infoSign1" ng-click="toolBar1 = true; infoSign1 = true; introShow1 = true"></span>
@@ -62,12 +66,12 @@
         <div  ng-class="{intro: !is_touch_device, introTouchDeviceHide: is_touch_device, introTouchDeviceShow: is_touch_device && introShow2}">
           <h2>Pizza Menu</h2>
           <p>
-            Built with MEAN stack
+            A pet project I did with Yeoman/Angular practicing two-way data binding, inline editing and data persistence with MongoDB .
           </p>
         </div>
       </a>
 
-      <div ng-show="is_touch_device" class="touchOnly">
+      <div ng-show="is_touch_device" class="touchOnlyIcons">
         <span class="glyphicon glyphicon-link" ng-show="toolBar2"></span>
         <span class="glyphicon glyphicon-remove" ng-show="toolBar2" ng-click="toolBar2 = false; infoSign2 = false; introShow2 = false"></span>
         <span class="glyphicon glyphicon-info-sign" ng-hide="infoSign2" ng-click="toolBar2 = true; infoSign2 = true; introShow2 = true"></span>
@@ -75,17 +79,17 @@
 
     </div>
     <div flex="33" flex-sm="50" flex-xs="100" class="projectsDiv">
-      <a href="https://thawing-cliffs-53689.herokuapp.com/">
+      <a href="https://angularmaterialportfolio.herokuapp.com/#/">
         <img src="./images/stories.png" alt="" />
         <div ng-class="{intro: !is_touch_device, introTouchDeviceHide: is_touch_device, introTouchDeviceShow: is_touch_device && introShow3}">
-          <h2>Stories Time</h2>
+          <h2>Angular Material Portfolio</h2>
           <p>
             Jquery play ground
           </p>
         </div>
       </a>
 
-      <div ng-show="is_touch_device" class="touchOnly">
+      <div ng-show="is_touch_device" class="touchOnlyIcons">
         <span class="glyphicon glyphicon-link" ng-show="toolBar3"></span>
         <span class="glyphicon glyphicon-remove" ng-show="toolBar3" ng-click="toolBar3 = false; infoSign3 = false; introShow3 = false"></span>
         <span class="glyphicon glyphicon-info-sign" ng-hide="infoSign3" ng-click="toolBar3 = true; infoSign3 = true; introShow3 = true"></span>
@@ -100,7 +104,7 @@
           Rails app
         </p>
       </div>
-      <div ng-show="is_touch_device" class="touchOnly">
+      <div ng-show="is_touch_device" class="touchOnlyIcons">
         <span class="glyphicon glyphicon-link" ng-show="toolBar4"></span>
         <span class="glyphicon glyphicon-remove" ng-show="toolBar4" ng-click="toolBar4 = false; infoSign4 = false; introShow4 = false"></span>
         <span class="glyphicon glyphicon-info-sign" ng-hide="infoSign4" ng-click="toolBar4 = true; infoSign4 = true; introShow4 = true"></span>

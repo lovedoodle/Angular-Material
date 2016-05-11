@@ -8,30 +8,34 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   margin: 0 auto;
   box-sizing: border-box;
 }
-
+//header style
 .header {
   width: 80%;
-  margin: 0 auto;
+  margin: 50px auto 30px auto;
+  color: #262626;
   .headline {
-    margin-top: 40px;
+
   }
-  .content {
-    font-size: 25px;
-    font-weight: bold;
+  .content p {
+    font-size: 20px;
+    font-weight: bolder;
   }
 }
 
-
+//main content where projects div style is
 .projectsWrap {
-  margin-top: 20px;
+
 }
 .projectsDiv {
-  padding: 3px;
+  padding: 2px;
   position: relative;
-  .touchOnly {
+  max-height: 300px ;
+  border: 1px solid #fff;
+
+  .touchOnlyIcons {
     position: absolute;
-    right: 30px;
-    bottom: 30px;
+    right: 20px;
+    bottom: 20px;
 
   }
   .intro{
@@ -43,17 +47,19 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
     font-size: 20px;
     color: white;
     display: none;
-    padding: 80px 20px;
+    padding: 20px;
+    // max-height: 300px !important
 
   }
 
   img {
     width: 100%;
-    height: 100%;
+    height: 300px;
+
   }
 
   .glyphicon {
-    font-size: 300%;
+    font-size: 200%;
   }
 }
 
@@ -67,11 +73,11 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   font-size: 20px;
   color: white;
   display: none;
-  padding: 80px 20px;
+  padding: 20px;
 }
 .introTouchDeviceShow {
   display: inline-block;
-  background-color: #003366;
+  background-color: #990099;
   opacity: 0.9;
   font-weight: bold;
 }
@@ -83,7 +89,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
     .intro {
       display: inline-block;
-      background-color: #003366;
+      background-color: #990099;
       opacity: 0.9;
       font-weight: bold;
     }
