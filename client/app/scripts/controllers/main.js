@@ -16,6 +16,10 @@ angular.module('clientApp')
     };
 
     console.log(is_touch_device());
+    // $scope.is_touch_device = true; //false == desktop mode, true == phone mode
+    // console.log($scop);
+    $scope.is_touch_device = is_touch_device();
+    console.log($scope.is_touch_device);
 
   //   if (!is_touch_device()) {
   //    var touchOnlyElements=document.getElementByClassName('touchOnly');
@@ -27,17 +31,5 @@ angular.module('clientApp')
    //
   //   //  .style.display='none';
   //  };
-
-
-    $scope.infoSign = false;
-    $scope.toolBar = false;
-    $scope.showToolBar = function() {
-      $scope.infoSign = !$scope.infoSign;
-      $scope.toolBar = !$scope.toolBar;
-    };
-    $scope.hideToolBar = function() {
-      $scope.infoSign = !$scope.infoSign;
-      $scope.toolBar = !$scope.toolBar;
-    }
 
   });

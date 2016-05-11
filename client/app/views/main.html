@@ -21,7 +21,7 @@
   <h4>Karma</h4>
   <p>Spectacular Test Runner for JavaScript.</p>
 </div> -->
-<div class="mainWrap">
+<div class="mainWrap" ng-class="{nonTouchDevice: !is_touch_device}">
   <div class="" layout="column" layout-wrap>
     <div class="header headline">
       <h3>Hello & Welcome</h1>
@@ -33,6 +33,7 @@
       <p>
         Below are some of pets projects I have been working on.
       </p>
+
     </div>
 
   </div>
@@ -49,10 +50,10 @@
           </p>
         </div>
       </a>
-      <div ng-show="is_touch_device()" class="touchOnly">
-        <span class="glyphicon glyphicon-link" ng-show="toolBar"></span>
-        <span class="glyphicon glyphicon-remove" ng-show="toolBar" ng-click="hideToolBar()"></span>
-        <span class="glyphicon glyphicon-info-sign" ng-hide="infoSign" ng-click="showToolBar()"></span>
+      <div ng-show="is_touch_device" class="touchOnly" >
+        <span class="glyphicon glyphicon-link" ng-show="toolBar1"></span>
+        <span class="glyphicon glyphicon-remove" ng-show="toolBar1" ng-click="toolBar1 = false; infoSign1 = false"></span>
+        <span class="glyphicon glyphicon-info-sign" ng-hide="infoSign1" ng-click="toolBar1 = true; infoSign1 = true"></span>
       </div>
     </div>
     <div flex="33" flex-sm="50" flex-xs="100" class="projectsDiv ">
@@ -66,10 +67,10 @@
         </div>
       </a>
 
-      <div ng-show="is_touch_device()" class="touchOnly">
-        <span class="glyphicon glyphicon-link" ng-show="toolBar"></span>
-        <span class="glyphicon glyphicon-remove" ng-show="toolBar" ng-click="hideToolBar()"></span>
-        <span class="glyphicon glyphicon-info-sign" ng-hide="infoSign" ng-click="showToolBar()"></span>
+      <div ng-show="is_touch_device" class="touchOnly">
+        <span class="glyphicon glyphicon-link" ng-show="toolBar2"></span>
+        <span class="glyphicon glyphicon-remove" ng-show="toolBar2" ng-click="toolBar2 = false; infoSign2 = false"></span>
+        <span class="glyphicon glyphicon-info-sign" ng-hide="infoSign2" ng-click="toolBar2 = true; infoSign2 = true"></span>
       </div>
 
     </div>
@@ -84,10 +85,10 @@
         </div>
       </a>
 
-      <div ng-show="is_touch_device()" class="touchOnly">
-        <span class="glyphicon glyphicon-link" ng-show="toolBar"></span>
-        <span class="glyphicon glyphicon-remove" ng-show="toolBar" ng-click="hideToolBar()"></span>
-        <span class="glyphicon glyphicon-info-sign" ng-hide="infoSign" ng-click="showToolBar()"></span>
+      <div ng-show="is_touch_device" class="touchOnly">
+        <span class="glyphicon glyphicon-link" ng-show="toolBar3"></span>
+        <span class="glyphicon glyphicon-remove" ng-show="toolBar3" ng-click="toolBar3 = false; infoSign3 = false"></span>
+        <span class="glyphicon glyphicon-info-sign" ng-hide="infoSign3" ng-click="toolBar3 = true; infoSign3 = true"></span>
       </div>
     </div>
 
@@ -99,10 +100,10 @@
           Rails app
         </p>
       </div>
-      <div ng-show="is_touch_device()" class="touchOnly">
-        <span class="glyphicon glyphicon-link" ng-show="toolBar"></span>
-        <span class="glyphicon glyphicon-remove" ng-show="toolBar" ng-click="hideToolBar()"></span>
-        <span class="glyphicon glyphicon-info-sign" ng-hide="infoSign" ng-click="showToolBar()"></span>
+      <div ng-show="is_touch_device" class="touchOnly">
+        <span class="glyphicon glyphicon-link" ng-show="toolBar4"></span>
+        <span class="glyphicon glyphicon-remove" ng-show="toolBar4" ng-click="toolBar4 = false; infoSign4 = false"></span>
+        <span class="glyphicon glyphicon-info-sign" ng-hide="infoSign4" ng-click="toolBar4 = true; infoSign4 = true"></span>
       </div>
     </div>
   </div>
