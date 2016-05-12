@@ -110,10 +110,10 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 .footer {
   width: 100%;
   margin: 5px auto;
-  background: -webkit-radial-gradient(#ffffff,#bfbfbf); /* For Safari 5.1 to 6.0 */
-  background: -o-radial-gradient(#ffffff,#bfbfbf); /* For Opera 11.6 to 12.0 */
-  background: -moz-radial-gradient(#ffffff,#bfbfbf); /* For Fx 3.6 to 15 */
-  background: linear-gradient(#ffffff,#bfbfbf); /* Standard syntax (must be last) */
+  background: -webkit-radial-gradient(#ffffff,#999999); /* For Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(#ffffff,#999999); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(#ffffff,#999999); /* For Fx 3.6 to 15 */
+  background: linear-gradient(#ffffff,#999999); /* Standard syntax (must be last) */
   height: 500px;
   .contact {
     width: 70%;
