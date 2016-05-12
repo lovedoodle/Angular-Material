@@ -8,7 +8,7 @@
  * Controller of the clientApp
  */
 angular.module('clientApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('MainCtrl', function ($scope, $timeout) {
     function is_touch_device() {
      return (('ontouchstart' in window)
           || (navigator.MaxTouchPoints > 0)
@@ -20,5 +20,11 @@ angular.module('clientApp')
     // console.log($scop);
     $scope.is_touch_device = is_touch_device();
     console.log($scope.is_touch_device);
+
+
+    $timeout(function() {
+      $scope.showRestPage = true;
+    }, 500);
+
 
   });

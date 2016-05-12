@@ -3,11 +3,9 @@
     <div class="headline">
       <h1>Hello & Welcome</h1>
     </div>
-    <div class="content">
+    <div class="content delayed" ng-show="showRestPage">
       <p>
-        My name Jing Wait. I am an aspiring full stack web developer.
-        As a person who loves living in browers' world,
-        I can bring a well rounded asset to your team that can fill any technical need you may have.
+        My name Jing Wait. I am an aspiring full stack web developer who loves living in browers' world.
       </p>
       <p>
         I am passionate about great design and writing Javascript and Ruby.
@@ -19,7 +17,7 @@
     </div>
   </div>
 
-  <div layout="row" layout-wrap class="projectsWrap">
+  <div layout="row" layout-wrap class="projectsWrap delayed" ng-show="showRestPage">
   <!-- <div layout="row" layout-wrap layout-xs="column" layout-margin class=""> -->
     <div flex="33" flex-sm="50" flex-xs="100" class="projectsDiv">
       <a  href="https://twittersearchmap.herokuapp.com/">
@@ -32,7 +30,7 @@
         </div>
       </a>
       <div ng-show="is_touch_device" class="touchOnlyIcons" >
-        <span class="glyphicon glyphicon-link" ng-show="toolBar1"></span>
+        <a href="https://twittersearchmap.herokuapp.com/"><span class="glyphicon glyphicon-link" ng-show="toolBar1"></span></a>
         <span class="glyphicon glyphicon-remove" ng-show="toolBar1" ng-click="toolBar1 = false; infoSign1 = false; introShow1 = false"></span>
         <span class="glyphicon glyphicon-info-sign" ng-hide="infoSign1" ng-click="toolBar1 = true; infoSign1 = true; introShow1 = true"></span>
       </div>
@@ -49,7 +47,7 @@
       </a>
 
       <div ng-show="is_touch_device" class="touchOnlyIcons">
-        <span class="glyphicon glyphicon-link" ng-show="toolBar2"></span>
+        <a href="https://angularpizzaplanet.herokuapp.com/"><span class="glyphicon glyphicon-link" ng-show="toolBar2"></span></a>
         <span class="glyphicon glyphicon-remove" ng-show="toolBar2" ng-click="toolBar2 = false; infoSign2 = false; introShow2 = false"></span>
         <span class="glyphicon glyphicon-info-sign" ng-hide="infoSign2" ng-click="toolBar2 = true; infoSign2 = true; introShow2 = true"></span>
       </div>
@@ -67,7 +65,7 @@
       </a>
 
       <div ng-show="is_touch_device" class="touchOnlyIcons">
-        <span class="glyphicon glyphicon-link" ng-show="toolBar3"></span>
+        <a href="https://hirejing.herokuapp.com/#/"><span class="glyphicon glyphicon-link" ng-show="toolBar3"></span></a>
         <span class="glyphicon glyphicon-remove" ng-show="toolBar3" ng-click="toolBar3 = false; infoSign3 = false; introShow3 = false"></span>
         <span class="glyphicon glyphicon-info-sign" ng-hide="infoSign3" ng-click="toolBar3 = true; infoSign3 = true; introShow3 = true"></span>
       </div>
@@ -90,7 +88,7 @@
   </div>
 
 <!-- //footer where stay social -->
-  <div class="footer" layout='column'>
+  <div class="footer delayed" layout='column' ng-show="showRestPage">
     <div class="contact" layout="row" layout-wrap>
       <div class="" flex='25' flex-xs='50'>
         <a href="mailto:jingzhaowait@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
