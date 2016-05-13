@@ -14,6 +14,22 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   font-family: 'Nunito', sans-serif;
 
 }
+.touchOnlyIcons i {
+  font-size: 30px;
+  color: white;
+  padding: 13px;
+  margin: auto;
+  border-radius: 50%;
+  opacity: 0.5;
+  background: -webkit-radial-gradient(circle, #595959, #737373, #999999); /* For Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(circle, #595959, #737373, #999999); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(circle, #595959, #737373, #999999); /* For Fx 3.6 to 15 */
+  background: radial-gradient(circle, #595959, #737373, #999999); /* Standard syntax (must be last) */
+
+}
+.fa-info {
+  padding: 10px 20px !important;
+}
 
 
 //header style
@@ -21,7 +37,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   width: 90%;
   margin: 50px auto 40px auto;
   color: #333333;
-  max-width: 800px;
+  max-width: 900px;
   .headline {
 
   }
@@ -71,9 +87,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
   }
 
-  .glyphicon {
-    font-size: 300%;
-  }
 }
 
 // replace hover state style with clict even style
@@ -90,7 +103,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 }
 .introTouchDeviceShow {
   display: inline-block;
-  background-color: #990099;
+  background-color: #0073e6;
   opacity: 0.9;
   font-weight: bold;
 }
@@ -102,7 +115,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
     .intro {
       display: inline-block;
-      background-color: #990099;
+      background-color: #0073e6;
       opacity: 0.9;
       font-weight: bold;
     }
@@ -124,7 +137,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   height: 500px;
   .contact {
     width: 80%;
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
     a {
       text-decoration: none;
