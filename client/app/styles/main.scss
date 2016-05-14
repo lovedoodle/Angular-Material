@@ -145,8 +145,22 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
     }
   }
 
-  .contact i:hover {
-    background-color: #ff3300;
+  .contact{
+    .fa-envelope-o:hover {
+      background-color: #ff3300;
+    }
+    .fa-github-alt:hover {
+      background-color: #0d0d0d;
+    }
+    .fa-instagram:hover {
+      background-color:#a3a375;
+    }
+    .fa-twitter:hover {
+      background-color: #3399ff;
+    }
+
+
+
   }
 }
 
