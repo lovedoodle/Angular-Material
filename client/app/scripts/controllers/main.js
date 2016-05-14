@@ -22,9 +22,9 @@ angular.module('clientApp')
     console.log($scope.is_touch_device);
 
 
-    $timeout(function() {
-      $scope.showRestPage = true;
-    }, 500);
+    // $timeout(function() {
+    //   $scope.showRestPage = true;
+    // }, 1000);
 
 
   });
