@@ -11,7 +11,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   width: 100%;
   margin: auto;
   box-sizing: border-box;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 
 }
 
@@ -60,14 +60,15 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 .header {
   width: 90%;
   margin: 50px auto 40px auto;
-  color: #333333;
+  color: #4d4d4d;
   max-width: 900px;
+  font-size: 20px;
   .headline {
 
   }
   .content p {
-    font-size: 22px;
-    font-weight: bolder;
+
+    // font-weight: bolder;
     // background: white;
     // opacity: 1;
   }
@@ -97,10 +98,14 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
     left: 0;
     width: 100%;
     height: 100%;
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     display: none;
     padding: 20px;
+    opacity: 0.95;
+    background-color: #0073e6;
+    // -webkit-transition: width 5s, height 5s; /* For Safari 3.1 to 6.0 */
+    // transition: width 5s, height 5s;
     // max-height: 300px !important
 
   }
@@ -128,7 +133,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 .introTouchDeviceShow {
   display: inline-block;
   background-color: #0073e6;
-  opacity: 0.9;
+  opacity: 0.95;
   font-weight: bold;
 }
 
@@ -139,9 +144,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
     .intro {
       display: inline-block;
-      background-color: #0073e6;
-      opacity: 0.9;
-      font-weight: bold;
+
+      // font-weight: bold;
     }
   }
 
@@ -150,7 +154,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
       background-color: #ff3300;
     }
     .fa-github-alt:hover {
-      background-color: #0d0d0d;
+      background-color: #333333;
     }
     .fa-instagram:hover {
       background-color:#a3a375;
