@@ -1,0 +1,20 @@
+<div  class="slideShow"ng-repeat="image in images" ng-show="image.visible" layout='row' layout-xs='column' layout-padding layout-wrap>
+  <div class="" flex='100'>
+    <h2>Which pooch you like most?</h2>
+  </div>
+  <div class="slideImg" flex='55' flex-xs='100'>
+
+    <img ng-src="images/{{image.src}}" />
+    <i class="fa fa-chevron-left" aria-hidden="true" ng-click="prev()"></i>
+    <i class="fa fa-chevron-right" aria-hidden="true" ng-click="next()"></i>
+    <i class="fa fa-camera" aria-hidden="true"> {{currentImg}} / {{images.length}}</i>
+
+  </div>
+
+  <div class="slideText" flex='40' flex-xs='100'>
+    <h3>{{image.name}}</h3>
+    <p>
+      {{image.personality}}
+    </p>
+  </div>
+</div>

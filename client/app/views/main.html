@@ -73,31 +73,32 @@
         </div>
       </a>
       <div ng-show="is_touch_device" class="touchOnlyIcons" >
-        <!-- <a href="https://twittersearchmap.herokuapp.com/"><span class="glyphicon glyphicon-link" ng-show="toolBar1"></span></a>
-        <span class="glyphicon glyphicon-remove" ng-show="toolBar1" ng-click="toolBar1 = false; infoSign1 = false; introShow1 = false"></span> -->
-        <!-- <span class="glyphicon glyphicon-info-sign" ng-hide="infoSign1" ng-click="toolBar1 = true; infoSign1 = true; introShow1 = true"></span> -->
         <a href="https://twittersearchmap.herokuapp.com/"><i class="fa fa-link" aria-hidden="true" ng-show="toolBar1"></i></a>
         <i class="fa fa-times" aria-hidden="true" ng-show="toolBar1" ng-click="toolBar1 = false; infoSign1 = false; introShow1 = false"></i>
         <i class="fa fa-info" aria-hidden="true" ng-hide="infoSign1" ng-click="toolBar1 = true; infoSign1 = true; introShow1 = true"></i>
       </div>
     </div>
 
+    <div flex="33" flex-sm="50" flex-xs="100" class="projectsDiv">
+      <a  href="#slideshow">
+        <img src="./images/butter.jpg" alt="" />
+        <div ng-class="{intro: !is_touch_device, introTouchDeviceHide: is_touch_device, introTouchDeviceShow: is_touch_device && introShow1}">
+          <h3>Slide Show</h3>
+          <p>
+            Puppies Gallery
+          </p>
+        </div>
+      </a>
+      <div ng-show="is_touch_device" class="touchOnlyIcons" >
+        <a href="#slideshow"><i class="fa fa-link" aria-hidden="true" ng-show="toolBar1"></i></a>
+        <i class="fa fa-times" aria-hidden="true" ng-show="toolBar4" ng-click="toolBar4 = false; infoSign4 = false; introShow4 = false"></i>
+        <i class="fa fa-info" aria-hidden="true" ng-hide="infoSign4" ng-click="toolBar4 = true; infoSign4 = true; introShow4 = true"></i>
+      </div>
+    </div>
 
 
-    <!-- <div flex="33" flex-sm="50" flex-xs="100" class="projectsDiv">
-      <img src="./images/pawesome.png" alt="" />
-      <div ng-class="{intro: !is_touch_device, introTouchDeviceHide: is_touch_device, introTouchDeviceShow: is_touch_device && introShow4}">
-        <h3>Pawesome Care</h3>
-        <p>
-          Rails app
-        </p>
-      </div>
-      <div ng-show="is_touch_device" class="touchOnlyIcons">
-        <span class="glyphicon glyphicon-link" ng-show="toolBar4"></span>
-        <span class="glyphicon glyphicon-remove" ng-show="toolBar4" ng-click="toolBar4 = false; infoSign4 = false; introShow4 = false"></span>
-        <span class="glyphicon glyphicon-info-sign" ng-hide="infoSign4" ng-click="toolBar4 = true; infoSign4 = true; introShow4 = true"></span>
-      </div>
-    </div> -->
+
+
   </div>
 
 <!-- //footer where stay social -->

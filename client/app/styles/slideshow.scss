@@ -1,0 +1,63 @@
+
+$fa-font-path: "../bower_components/font-awesome/fonts/";
+
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+.container {
+  margin: 20px auto;
+  box-sizing: border-box;
+  color: #404040;
+}
+
+.slideShow {
+  position: relative;
+  .slideText {
+    h3 {
+      text-transform: capitalize;
+    }
+  }
+  .slideImg {
+    position: relative;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .fa:hover {
+      cursor: pointer;
+    }
+    .fa-chevron-left{
+      font-size: 40px;
+      color: white;
+      position: absolute;
+      left: 5%;
+      top: 45%;
+    }
+    .fa-chevron-right{
+      font-size: 40px;
+      color: white;
+      position: absolute;
+      right: 5%;
+      top: 45%;
+    }
+    .fa-camera{
+      font-size: 16px;
+      color: white;
+      position: absolute;
+      right: 5%;
+      bottom: 5%;
+    }
+
+  }
+
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 900px;
+  }
+
+
+}

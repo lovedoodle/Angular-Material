@@ -33,6 +33,11 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/slideshow', {
+        templateUrl: 'views/slideshow.html',
+        controller: 'SlideshowCtrl',
+        controllerAs: 'slideshow'
+      })
       .otherwise({
         redirectTo: '/'
       });
