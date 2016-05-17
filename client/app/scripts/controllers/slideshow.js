@@ -29,7 +29,9 @@ angular.module('clientApp')
       {src: 'jupiter.jpg',
       name: 'jupiter',
       personality: 'cute '
-      }
-    ]
+      },{src: 'donald.jpg',
+        name: 'donald',
+        personality: 'gental men'
+      }]
 
   });
