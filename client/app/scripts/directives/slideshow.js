@@ -18,9 +18,8 @@ angular.module('clientApp')
       link: function(scope, elem, attrs) {
         console.log("testing", arguments);
         scope.currentIndex = 0; // Initially the index is at the first image
-
-
         scope.next = function() {
+
           scope.currentIndex < scope.images.length - 1 ? scope.currentIndex++ : scope.currentIndex = 0;
 
         };
