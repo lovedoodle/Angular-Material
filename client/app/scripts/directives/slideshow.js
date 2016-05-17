@@ -34,7 +34,6 @@ angular.module('clientApp')
         });
 
         scope.images[scope.currentIndex].visible = true; // make the current image visible
-        scope.currentImg = scope.currentIndex + 1;
       });
       }
     };

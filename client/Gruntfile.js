@@ -255,7 +255,7 @@ module.exports = function (grunt) {
       }
     },
 
-    // Renames files for browser caching purposes
+    // Renames files for (to prevent browser caching))
     filerev: {
       dist: {
         src: [
@@ -376,7 +376,7 @@ module.exports = function (grunt) {
           usemin: 'scripts/scripts.js'
         },
         cwd: '<%= yeoman.app %>',
-        src: ['views/{,*/}*.html', 'partials/{,*/}*.html'],
+        src: ['views/{,*/}*.html','partials/{,*/}*.html'],
         dest: '.tmp/templateCache.js'
       }
     },

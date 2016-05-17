@@ -12,26 +12,27 @@ angular.module('clientApp')
     $scope.images = [
       {src: "butter.jpg",
       name: 'butter',
-      personality: "sweet"
+      personality: "Protector like Jon Snow, always looking out on the wall for the Whitewalker Squirrels"
       },
       {src: "jack.jpg",
       name: "jack",
-      personality: 'friendly'
+      personality: 'Old wise man like Ser Barristan'
       },
       {src: "buckroo.jpg",
-      name: 'buckroo',
-      personality: 'great'
+      name: 'Buckaroo',
+      personality: 'Loyal but bit hardheaded, like Jorah Mormont'
       },
       {src: 'arrow.jpg',
       name: 'arrow',
-      personality: 'never bark'
+      personality: 'Quiet like Hodor'
       },
       {src: 'jupiter.jpg',
       name: 'jupiter',
-      personality: 'cute '
-      },{src: 'donald.jpg',
+      personality: 'Naive and young but very earnest like Tommen'
+      },
+      {src: 'donald.jpg',
         name: 'donald',
-        personality: 'gental men'
+        personality: 'Sweet and Quiet like Sam Tarly'
       }]
 
   });
