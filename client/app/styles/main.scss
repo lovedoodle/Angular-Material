@@ -12,7 +12,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   margin: auto;
   box-sizing: border-box;
   font-family: 'Ubuntu', sans-serif;
-
 }
 
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -49,8 +48,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   background: -o-radial-gradient(circle, #595959, #737373, #999999); /* For Opera 11.6 to 12.0 */
   background: -moz-radial-gradient(circle, #595959, #737373, #999999); /* For Fx 3.6 to 15 */
   background: radial-gradient(circle, #595959, #737373, #999999); /* Standard syntax (must be last) */
-
 }
+
 .fa-info {
   padding: 10px 17px !important;
 }
