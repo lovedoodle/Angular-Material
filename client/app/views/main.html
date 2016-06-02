@@ -18,8 +18,8 @@
   </div>
 
   <div layout="row" layout-wrap class="projectsWrap fade-in" >
-  <!-- <div layout="row" layout-wrap layout-xs="column" layout-margin class=""> -->
-  <div flex="33" flex-gt-lg='25' flex-sm="50" flex-xs="100" class="projectsDiv">
+  <!-- <div layout="row" layout-wrap layout-xs="column"  class=""> -->
+  <div flex="33" flex-gt-lg='25' flex-sm="50" flex-xs="100" class="projectsDiv" >
     <a href="https://hirejing.herokuapp.com/#/">
       <img src="./images/stories.png" alt="" />
       <div ng-class="{intro: !is_touch_device, introTouchDeviceHide: is_touch_device, introTouchDeviceShow: is_touch_device && introShow3}">
@@ -62,7 +62,7 @@
 
   </div>
 
-    <div flex="33" flex-gt-lg='25' flex-sm="50" flex-xs="100" class="projectsDiv">
+    <div flex="33" flex-gt-lg='25' flex-sm="50" flex-xs="100" class="projectsDiv" >
       <a  href="https://twittersearchmap.herokuapp.com/">
         <img src="./images/twittersearch.png" alt="" />
         <div ng-class="{intro: !is_touch_device, introTouchDeviceHide: is_touch_device, introTouchDeviceShow: is_touch_device && introShow1}">
@@ -79,7 +79,7 @@
       </div>
     </div>
 
-    <div flex="33" flex-gt-lg='25' flex-sm="50" flex-xs="100" class="projectsDiv">
+    <div flex="33" flex-gt-lg='25' flex-sm="50" flex-xs="100" class="projectsDiv" >
       <a  href="#slideshow">
         <img src="./images/butter.jpg" alt="" />
         <div ng-class="{intro: !is_touch_device, introTouchDeviceHide: is_touch_device, introTouchDeviceShow: is_touch_device && introShow4}">
@@ -93,6 +93,23 @@
         <a href="#slideshow"><i class="fa fa-link" aria-hidden="true" ng-show="toolBar4"></i></a>
         <i class="fa fa-times" aria-hidden="true" ng-show="toolBar4" ng-click="toolBar4 = false; infoSign4 = false; introShow4 = false"></i>
         <i class="fa fa-info" aria-hidden="true" ng-hide="infoSign4" ng-click="toolBar4 = true; infoSign4 = true; introShow4 = true"></i>
+      </div>
+    </div>
+
+    <div flex="33" flex-gt-lg='25' flex-sm="50" flex-xs="100" class="projectsDiv" >
+      <a  href="#sticky-header">
+        <img src="./images/stickyHeader.png" alt="" />
+        <div ng-class="{intro: !is_touch_device, introTouchDeviceHide: is_touch_device, introTouchDeviceShow: is_touch_device && introShow4}">
+          <h3>Sticky Header</h3>
+          <p>
+            A small site that features the effect I saw on Wranger site. I thought it was super neat and I wanted to see if I could reproduce the look and feel.
+          </p>
+        </div>
+      </a>
+      <div ng-show="is_touch_device" class="touchOnlyIcons" >
+        <a href="#slideshow"><i class="fa fa-link" aria-hidden="true" ng-show="toolBar5"></i></a>
+        <i class="fa fa-times" aria-hidden="true" ng-show="toolBar5" ng-click="toolBar5 = false; infoSign5 = false; introShow5 = false"></i>
+        <i class="fa fa-info" aria-hidden="true" ng-hide="infoSign5" ng-click="toolBar5 = true; infoSign5 = true; introShow5 = true"></i>
       </div>
     </div>
 

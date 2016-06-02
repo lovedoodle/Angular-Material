@@ -10,7 +10,7 @@
  */
 angular
   .module('clientApp', [
-    'ngAnimate',
+    // 'ngAnimate2',
     'ngCookies',
     'ngResource',
     'ngRoute',
@@ -36,6 +36,11 @@ angular
         templateUrl: 'views/slideshow.html',
         controller: 'SlideshowCtrl',
         controllerAs: 'slideshow'
+      })
+      .when('/sticky-header', {
+        templateUrl: 'views/sticky-header.html',
+        // controller: 'StickyHeaderCtrl',
+        // controllerAs: 'stickyHeader'
       })
       .otherwise({
         redirectTo: '/'

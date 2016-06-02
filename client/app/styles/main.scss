@@ -75,12 +75,12 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 //main content where projects div style is
 .projectsWrap {
-  width: 98%;
-  margin: 10px auto 40px auto;;
+  width: 97%;
+  margin: 10px auto 40px auto;
 
 }
 .projectsDiv {
-  padding: 2px;
+  padding: 2.5px;
   position: relative;
   max-height: 300px ;
   border: 1px solid #fff;
@@ -103,6 +103,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
     padding: 20px;
     opacity: 0.95;
     background-color: #0073e6;
+
     // -webkit-transition: width 5s, height 5s; /* For Safari 3.1 to 6.0 */
     // transition: width 5s, height 5s;
     // max-height: 300px !important
@@ -143,9 +144,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
     .intro {
       display: inline-block;
-
-      // font-weight: bold;
     }
+
   }
 
   .contact{
