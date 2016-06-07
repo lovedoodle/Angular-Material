@@ -1,10 +1,10 @@
-<div class="slideShow" ng-repeat="image in images" ng-show="image.visible" layout='row' layout-padding layout-wrap>
+<div class="slideShow"  layout='row' layout-padding layout-wrap>
   <div class="" flex='100'>
     <h2>Which pooch you like most?</h2>
   </div>
   <div class="slideImg" flex='55' flex-xs='100' md-swipe-right="prev()" md-swipe-left="next()">
 
-    <img ng-src="images/{{image.src}}" />
+    <img ng-src="images/{{currentImage.src}}" />
     <i class="fa fa-chevron-left" aria-hidden="true" ng-click="prev()"></i>
     <i class="fa fa-chevron-right" aria-hidden="true" ng-click="next()" ></i>
     <i class="fa fa-camera" aria-hidden="true"> {{currentIndex + 1}} / {{images.length}}</i>
@@ -12,9 +12,9 @@
   </div>
 
   <div class="slideText" flex='40' flex-xs='100'>
-    <h3>{{image.name}}</h3>
+    <h3>{{currentImage.name}}</h3>
     <p>
-      {{image.personality}}
+      {{currentImage.personality}}
     </p>
   </div>
 </div>
